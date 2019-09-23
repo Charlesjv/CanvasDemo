@@ -53,7 +53,12 @@ public class MainActivity extends AppCompatActivity {
 
            //1. Set the text size
            paintbrush.setTextSize(40);
-           canvas.drawText("HELLO WORLD",10,400,paintbrush);
+           canvas.drawText("HELLO WORLD",10,300,paintbrush);
+
+        paintbrush.setTextSize(10);
+        paintbrush.setColor(Color.YELLOW);
+        canvas.drawText("GOOD BYE WORLD",10,450,paintbrush);
+
 
 
         ivframe.setImageBitmap(b);
