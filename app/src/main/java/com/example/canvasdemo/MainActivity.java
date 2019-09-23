@@ -50,6 +50,12 @@ public class MainActivity extends AppCompatActivity {
            canvas.drawRect(150,150,200,200,paintbrush);
 
 
+
+           //1. Set the text size
+           paintbrush.setTextSize(40);
+           canvas.drawText("HELLO WORLD",10,400,paintbrush);
+
+
         ivframe.setImageBitmap(b);
     }
 }
