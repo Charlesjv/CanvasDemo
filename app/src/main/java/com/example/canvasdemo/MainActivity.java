@@ -26,12 +26,28 @@ public class MainActivity extends AppCompatActivity {
 
         //1. set the background
 
-            canvas.drawColor(Color.GREEN);
+            canvas.drawColor(Color.BLACK);
+
+            paintbrush.setColor(Color.YELLOW);
 
          //2. draw the line
 
             canvas.drawLine(10,50,200,50,paintbrush);
 
+            //4. Change to a red crayon
+
+            paintbrush.setColor(Color.RED);
+
+            //5.draw a diagonal line(red)
+           canvas.drawLine(200,50,50,150,paintbrush);
+
+
+           //1. Change crayon to white
+           paintbrush.setColor(Color.WHITE);
+           canvas.drawRect(100,100,120,120,paintbrush);
+
+
+           canvas.drawRect(150,150,200,200,paintbrush);
 
 
         ivframe.setImageBitmap(b);
